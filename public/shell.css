@@ -8,29 +8,30 @@ body{
 }
 
 .header{
+  display: grid;
   height:8vh;
   background-color: var(--loader-color);
   margin:0px;
+  grid-template-columns: 8fr 19fr 12fr 8fr 8fr 15fr ;
 }
 
-.menu-img{
-  /* font-size: 16px; */
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  min-height: 52px;
-  height: 52px;
-  transition: background-color .3s ease-out;
+.header > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__login {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .loader{
-  /* display: flex; */
-  /* align-items: center;
-  justify-content: center; */
   height: 100vh;
   width: 100vw;
   position: fixed;
-  top:0;
+  top: 0;
+  left: 0;
   margin-top: calc(50vh - var(--loader-size)/2);
   margin-left: calc(50vw - var(--loader-size)/2);
 }
@@ -38,8 +39,8 @@ body{
 .lds-ring {
   display: inline-block;
   position: relative;
-  width: 60px;
-  height: 60px;
+  width: calc(var(--loader-size) + 20);
+  height: calc(var(--loader-size) + 20);
 }
 
 .lds-ring div {
