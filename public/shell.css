@@ -11,8 +11,8 @@ body{
   display: grid;
   height:8vh;
   background-color: var(--loader-color);
-  margin:0px;
-  grid-template-columns: 8fr 19fr 12fr 8fr 8fr 15fr ;
+  /* margin:0px; */
+  grid-template-columns: 8fr 19fr 12fr 8fr 8fr 15fr;
 }
 
 .header > div {

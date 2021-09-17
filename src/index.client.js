@@ -1,8 +1,8 @@
 import React from 'react'
-// import App from './App.client'
 import ReactDOM from 'react-dom'
-import Shell from './Shell.js'
+import App from './carousel/App.client'
+// import Shell from './shell/Shell.js'
 
 
-// ReactDOM.render(<App/>, document.getElementById('root'))
-ReactDOM.render(<Shell/>, document.getElementById('root'))
+ReactDOM.render(<App/>, document.getElementById('root'))
+// ReactDOM.render(<Shell/>, document.getElementById('root'))
